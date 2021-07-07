@@ -1,0 +1,46 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Classificador</h4>
+<!--     
+<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+  <span aria-hidden="true">&times;</span>
+</button>
+-->
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+<!--     SELECTOR -->
+          <app-select-classificador></app-select-classificador>          
+<!--     
+            <div class="input-group">
+            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+            <div class="input-group-append">     
+              <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+      </div>
+      </div>
+  -->
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+<!--        
+  Classificador:
+  -->
+<button type="button" class="btn btn-outline-dark" (click)="modal.close('ETIQUETA: ')">
+Classificar
+</button>
+    </div>
+</ng-template>
+<!--  
+  Parte visivel da janela modal:
+  -->
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">
+Classificar
+</button>
+  <hr>
+<!-- 
+  <pre>{{ closeResult }}</pre>
+
+-->
+
